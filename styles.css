@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+img {
+  width: 100%;
+  display: block;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.btn {
+  padding: 0.875rem;
+  border-radius: 8px;
+  display: block;
+  font-weight: 700;
+  transition: 0.3s ease-in-out;
+  border: none;
+}
+
+
+.btn-dark {
+  background: #000;
+  color: #fff;
+}
+
+
+.btn-dark:hover {
+  background: #4d4d4d;
+}
+.btn-dark:active {
+  background: #333;
+}
+
+
+h1 {
+  margin: 1.5rem 0 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+
+h2::first-letter {
+  text-transform: uppercase;
+}
+
+
+.picker {
+  margin-top: 3rem;
+}
+
+
+.headline-container,
+.page-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.page-container {
+  align-items: center;
+}
+
+
+.dropdown-color {
+  margin: 2.5rem 0 0;
+}
+
+
+label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+
+input,
+select {
+  width: 90vw;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: inherit;
+  display: block;
+  outline: none;
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+
+
+input {
+  margin-bottom: 1rem;
+}
+
+
+input:focus,
+select:focus {
+  outline: 1px solid #038cfc;
+}
+
+
+select {
+  appearance: none;
+  background-image: url("img/chevron-down.png");
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-color: #fff;
+  margin-bottom: 3.5rem;
+}
+
+
+.dropdown-color button {
+  width: 90vw;
+  height: 48px;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+  font-family: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0px;
+}
+
+
+.color-palette {
+  margin-top: 1rem;
+  display: flex;
+}
+
+
+.swatch {
+  height: 58px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.colorList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1rem;
+  margin-bottom: 12px;
+  display: flex;
+
+  .swatch {
+    border-radius: 0;
+  }
+
+  li {
+    flex: 1;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+  }
+
+  li:hover {
+    scale: 1.05;
+  }
+
+  li:first-child {
+    .swatch {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+  }
+
+  li:last-child {
+    .swatch {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+  }
+}
+
+#createButton {
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+  .picker {
+    margin-top: -10px;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  h2 {
+    margin-top: -10px;
+    margin-bottom: 48px;
+  }
+
+}
+
+/* ################ */
+/* Tablet Styles */
+/* ################# */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-footer .container {
+    justify-content: flex-start;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 4rem;
+  }
+
+  .picker {
+    margin-top: 0;
+  }
+
+  .dropdown-color {
+    margin: 2rem 0 1rem;
+  }
+
+  .dropdown-color button {
+    font-size: 1.25rem;
+  }
+  label {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  input,
+  select {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .select {
+    margin-bottom: 4rem;
+  }
+
+  .swatch {
+    font-size: 1.125rem;
+  }
+}
+
+
+@media only screen and (min-width: 1025px) {
+  
+  h1 {
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 4.5rem;
+    font-size: 2rem;
+  }
+
+  .picker {
+    margin-top: 0;
+  }
+
+  .headline-container {
+    position: relative;
+    max-width: 1100px;
+    margin-top: -10px;
+    margin-bottom: 72px;
+  }
+
+  .logo {
+    padding: 0.625rem 0.625rem 0.625rem 0.8rem;
+  }
+
+  .desktop-row {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .dropdown-color {
+    position: absolute;
+    left: 0;
+    top: 26.5%;
+  }
+
+  .dropdown-color button {
+    max-width: 468px;
+    font-size: 1.25rem;
+  }
+
+  label {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  input,
+  select {
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+    max-width: 468px;
+  }
+
+  select {
+    margin-bottom: 3.875rem;
+  }
+
+  .swatch {
+    height: 112px;
+    font-size: 1.125rem;
+  }
+
+  .main-footer .container {
+    justify-content: flex-start;
+  }
+
+  #colorPalette {
+    margin-top: 112px;
+  }
+}
+
+
