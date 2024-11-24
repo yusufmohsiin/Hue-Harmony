@@ -43,12 +43,3 @@ _Color Selection_: User can select their base color either via the color wheel p
 _Color Harmony Selection_: User can then select their color harmony of choice via the drop down menu.
 
 _Color Palette Output_: After the selection is made, Hue Harmony will display color suggestion onto a color palette when user clicks on "Create Combination" button.
-
-**Mobile/Tablet View Demo**
-
-<img src="img/tablet-mobile-view.gif" align="center" width="300"><br>
-
-**Desktop View Demo**
-
-<img src="img/desktop-view.gif" align="center" width="450">
-
