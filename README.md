@@ -43,3 +43,15 @@ _Color Selection_: User can select their base color either via the color wheel p
 _Color Harmony Selection_: User can then select their color harmony of choice via the drop down menu.
 
 _Color Palette Output_: After the selection is made, Hue Harmony will display color suggestion onto a color palette when user clicks on "Create Combination" button.
+
+
+# Reservation of Rights
+
+All rights reserved to Chingu platform.
+
+Chingu is a platform that helps developers and other people in tech related roles practice in-demand skills and accelerate their learning through collaboration and project-building.
+
+Learn more about Chingu platform at https://www.chingu.io/
+
+![26086677](https://github.com/user-attachments/assets/3e7f25cc-14b6-4149-b2a0-f48ce2585ee4)
+
